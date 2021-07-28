@@ -1,4 +1,14 @@
-def karatsuba(x: int, y: int):
+def karatsuba(x: int, y: int) -> int:
+    """Multiply two numbers using the Karatsuba algorithm
+
+    Args:
+        x (int): the first integer to be multiplied
+        y (int): the second integer to be multiplied
+
+    Returns:
+        int: the result of the multiplication
+    """
+
     # Break the recursion written below if the numbers have less than 2 digits.
     if x < 10 or y < 10:
         return x * y
